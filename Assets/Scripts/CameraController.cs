@@ -1,12 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
     private Player player;
     private Vector3 lastPosition;
     private float distance;
+    private GameManager gameManager;
 
     // Start is called before the first frame update
     void Start()

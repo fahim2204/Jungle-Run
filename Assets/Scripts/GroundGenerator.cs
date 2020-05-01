@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class GroundGenerator : MonoBehaviour
 {
@@ -36,8 +34,7 @@ public class GroundGenerator : MonoBehaviour
         if(transform.position.x < groundPoint.position.x)
         {
             int random = Random.Range(0, groundPoolers.Length);
-            float distance = groundWidths[random] / 2;
-
+            float distance = groundWidths[random] / 3;
             float gap = Random.Range(minGap, maxGap);
             float height = Random.Range(minY, maxY);
 
